@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def simulate_dice_rolls(n):
+def dice_rolls(n):
     dice1 = np.random.randint(1, 7, size=n)
     dice2 = np.random.randint(1, 7, size=n)
     return dice1 + dice2
@@ -17,5 +17,5 @@ def plot_histogram(results, n):
 N_values = [500, 1000, 2000, 5000, 10000, 15000, 20000, 50000, 100000]
 
 for n in N_values:
-    results = simulate_dice_rolls(n)
+    results = dice_rolls(n)
     plot_histogram(results, n)
