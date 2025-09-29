@@ -11,7 +11,7 @@ y = data["Weight"].values
 plt.scatter(X, y, alpha=0.5)
 plt.xlabel("Height")
 plt.ylabel("Weight")
-plt.title("Height vs Weight")
+plt.title("Height & Weight")
 plt.show()
 
 model = LinearRegression()
@@ -22,7 +22,7 @@ plt.scatter(X, y, alpha=0.5, label="Data")
 plt.plot(X, y_pred, color="red", linewidth=2, label="Regression Line")
 plt.xlabel("Height")
 plt.ylabel("Weight")
-plt.title("Linear Regression: Height vs Weight")
+plt.title("Linear Regression: Height & Weight")
 plt.legend()
 plt.show()
 
