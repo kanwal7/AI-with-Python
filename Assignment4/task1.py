@@ -14,8 +14,8 @@ def plot_histogram(results, n):
     plt.ylabel("Relative frequency")
     plt.show()
 
-N_values = [500, 1000, 2000, 5000, 10000, 15000, 20000, 50000, 100000]
+values = [500, 1000, 2000, 5000, 10000, 15000, 20000, 50000, 100000]
 
-for n in N_values:
+for n in values:
     results = dice_rolls(n)
     plot_histogram(results, n)
